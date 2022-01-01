@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_BanDienThoai.cs" />
+    <Compile Include="DAL_DienThoai.cs" />
     <Compile Include="DAL_DN.cs" />
+    <Compile Include="DAL_ThongKe.cs" />
+    <Compile Include="DAL_TimKiem.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -35,15 +35,14 @@ namespace GUI_SMS
             this.mnuLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuClose = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManage = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSubject = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSearch = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSearch1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSearch2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPrint = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPrint1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPrint2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDienthoai = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnusearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuTimkiem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBanĐT = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuThongke = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -51,11 +50,12 @@ namespace GUI_SMS
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuSystem,
             this.mnuManage,
-            this.mnuSearch,
-            this.mnuPrint});
+            this.mnusearch,
+            this.mnuBanĐT,
+            this.mnuThongke});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(607, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(727, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,106 +66,98 @@ namespace GUI_SMS
             this.mnuLogout,
             this.mnuClose});
             this.mnuSystem.Name = "mnuSystem";
-            this.mnuSystem.Size = new System.Drawing.Size(57, 20);
-            this.mnuSystem.Text = "System";
-            this.mnuSystem.Click += new System.EventHandler(this.mnuSystem_Click);
+            this.mnuSystem.Size = new System.Drawing.Size(69, 20);
+            this.mnuSystem.Text = "Hệ thống";
             // 
             // mnuLogin
             // 
             this.mnuLogin.Name = "mnuLogin";
-            this.mnuLogin.Size = new System.Drawing.Size(180, 22);
+            this.mnuLogin.Size = new System.Drawing.Size(115, 22);
             this.mnuLogin.Text = "Log in";
             this.mnuLogin.Click += new System.EventHandler(this.mnuLogin_Click);
             // 
             // mnuLogout
             // 
             this.mnuLogout.Name = "mnuLogout";
-            this.mnuLogout.Size = new System.Drawing.Size(180, 22);
+            this.mnuLogout.Size = new System.Drawing.Size(115, 22);
             this.mnuLogout.Text = "Log out";
             this.mnuLogout.Click += new System.EventHandler(this.mnuLogout_Click);
             // 
             // mnuClose
             // 
             this.mnuClose.Name = "mnuClose";
-            this.mnuClose.Size = new System.Drawing.Size(180, 22);
+            this.mnuClose.Size = new System.Drawing.Size(115, 22);
             this.mnuClose.Text = "Close";
             this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
             // 
             // mnuManage
             // 
             this.mnuManage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuStudent,
-            this.mnuSubject});
+            this.mnuDienthoai});
             this.mnuManage.Name = "mnuManage";
-            this.mnuManage.Size = new System.Drawing.Size(62, 20);
-            this.mnuManage.Text = "Manage";
+            this.mnuManage.Size = new System.Drawing.Size(60, 20);
+            this.mnuManage.Text = "Quản lý";
             // 
-            // mnuStudent
+            // mnuDienthoai
             // 
-            this.mnuStudent.Name = "mnuStudent";
-            this.mnuStudent.Size = new System.Drawing.Size(180, 22);
-            this.mnuStudent.Text = "Student";
+            this.mnuDienthoai.Name = "mnuDienthoai";
+            this.mnuDienthoai.Size = new System.Drawing.Size(128, 22);
+            this.mnuDienthoai.Text = "Điện thoại";
+            this.mnuDienthoai.Click += new System.EventHandler(this.mnuStudent_Click);
             // 
-            // mnuSubject
+            // mnusearch
             // 
-            this.mnuSubject.Name = "mnuSubject";
-            this.mnuSubject.Size = new System.Drawing.Size(180, 22);
-            this.mnuSubject.Text = "Subject";
+            this.mnusearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuTimkiem});
+            this.mnusearch.Name = "mnusearch";
+            this.mnusearch.Size = new System.Drawing.Size(69, 20);
+            this.mnusearch.Text = "Tìm kiếm";
             // 
-            // mnuSearch
+            // mnuTimkiem
             // 
-            this.mnuSearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuSearch1,
-            this.mnuSearch2});
-            this.mnuSearch.Name = "mnuSearch";
-            this.mnuSearch.Size = new System.Drawing.Size(54, 20);
-            this.mnuSearch.Text = "Search";
+            this.mnuTimkiem.Name = "mnuTimkiem";
+            this.mnuTimkiem.Size = new System.Drawing.Size(179, 22);
+            this.mnuTimkiem.Text = "Tìm kiếm sản phẩm";
+            this.mnuTimkiem.Click += new System.EventHandler(this.mnuTimkiem_Click_1);
             // 
-            // mnuSearch1
+            // mnuBanĐT
             // 
-            this.mnuSearch1.Name = "mnuSearch1";
-            this.mnuSearch1.Size = new System.Drawing.Size(180, 22);
-            this.mnuSearch1.Text = "Search1";
+            this.mnuBanĐT.Name = "mnuBanĐT";
+            this.mnuBanĐT.Size = new System.Drawing.Size(95, 20);
+            this.mnuBanĐT.Text = "Bán điện thoại";
+            this.mnuBanĐT.Click += new System.EventHandler(this.mnuBanĐT_Click);
             // 
-            // mnuSearch2
+            // mnuThongke
             // 
-            this.mnuSearch2.Name = "mnuSearch2";
-            this.mnuSearch2.Size = new System.Drawing.Size(180, 22);
-            this.mnuSearch2.Text = "Search2";
+            this.mnuThongke.Name = "mnuThongke";
+            this.mnuThongke.Size = new System.Drawing.Size(69, 20);
+            this.mnuThongke.Text = "Thống kê";
+            this.mnuThongke.Click += new System.EventHandler(this.mnuThongke_Click);
             // 
-            // mnuPrint
+            // pictureBox1
             // 
-            this.mnuPrint.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuPrint1,
-            this.mnuPrint2});
-            this.mnuPrint.Name = "mnuPrint";
-            this.mnuPrint.Size = new System.Drawing.Size(44, 20);
-            this.mnuPrint.Text = "Print";
-            // 
-            // mnuPrint1
-            // 
-            this.mnuPrint1.Name = "mnuPrint1";
-            this.mnuPrint1.Size = new System.Drawing.Size(180, 22);
-            this.mnuPrint1.Text = "Print1";
-            // 
-            // mnuPrint2
-            // 
-            this.mnuPrint2.Name = "mnuPrint2";
-            this.mnuPrint2.Size = new System.Drawing.Size(180, 22);
-            this.mnuPrint2.Text = "Print2";
+            this.pictureBox1.Image = global::GUI_SMS.Properties.Resources.menu;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(727, 341);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // GUI_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 278);
+            this.ClientSize = new System.Drawing.Size(727, 368);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GUI_Menu";
-            this.Text = "Form1";
+            this.Text = "Quản lý thiết bị điện thoại";
             this.Activated += new System.EventHandler(this.GUI_Menu_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,14 +170,12 @@ namespace GUI_SMS
         private System.Windows.Forms.ToolStripMenuItem mnuLogout;
         private System.Windows.Forms.ToolStripMenuItem mnuClose;
         private System.Windows.Forms.ToolStripMenuItem mnuManage;
-        private System.Windows.Forms.ToolStripMenuItem mnuStudent;
-        private System.Windows.Forms.ToolStripMenuItem mnuSubject;
-        private System.Windows.Forms.ToolStripMenuItem mnuSearch;
-        private System.Windows.Forms.ToolStripMenuItem mnuSearch1;
-        private System.Windows.Forms.ToolStripMenuItem mnuSearch2;
-        private System.Windows.Forms.ToolStripMenuItem mnuPrint;
-        private System.Windows.Forms.ToolStripMenuItem mnuPrint1;
-        private System.Windows.Forms.ToolStripMenuItem mnuPrint2;
+        private System.Windows.Forms.ToolStripMenuItem mnuDienthoai;
+        private System.Windows.Forms.ToolStripMenuItem mnusearch;
+        private System.Windows.Forms.ToolStripMenuItem mnuTimkiem;
+        private System.Windows.Forms.ToolStripMenuItem mnuBanĐT;
+        private System.Windows.Forms.ToolStripMenuItem mnuThongke;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

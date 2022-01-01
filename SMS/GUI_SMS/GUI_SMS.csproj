@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_BanDienThoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_BanDienThoai.Designer.cs">
+      <DependentUpon>GUI_BanDienThoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DienThoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DienThoai.Designer.cs">
+      <DependentUpon>GUI_DienThoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +70,37 @@
     <Compile Include="GUI_Menu.Designer.cs">
       <DependentUpon>GUI_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ThongKe.Designer.cs">
+      <DependentUpon>GUI_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_TimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_TimKiem.Designer.cs">
+      <DependentUpon>GUI_TimKiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_BanDienThoai.resx">
+      <DependentUpon>GUI_BanDienThoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DienThoai.resx">
+      <DependentUpon>GUI_DienThoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_DN.resx">
       <DependentUpon>GUI_DN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Menu.resx">
       <DependentUpon>GUI_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThongKe.resx">
+      <DependentUpon>GUI_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_TimKiem.resx">
+      <DependentUpon>GUI_TimKiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,6 +130,21 @@
       <Project>{04724cf8-e114-464a-889d-09a305eb3b8c}</Project>
       <Name>BUS_SMS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qldt.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,33 +20,32 @@ namespace GUI_SMS
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         
 
-        private void btnlogin_Click(object sender, EventArgs e)
+        private void btnlogin_Click_1(object sender, EventArgs e)
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
 
             int i = bn.getDN(username, password);
+            
 
             if (i == 1)
             {
                 mySave.KT = !mySave.KT;
-                MessageBox.Show("Log in successful","information");
+                MessageBox.Show("Đăng nhập thành công", "information");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("username or password is not correct");
+                MessageBox.Show("Tên đăng nhập hoặc mật khấu không đúng.", "Information");
             }
-           
 
         }
 
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

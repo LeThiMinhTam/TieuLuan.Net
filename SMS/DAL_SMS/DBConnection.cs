@@ -10,7 +10,7 @@ namespace DAL_SMS
 {
     public class DBConnection
     {
-        public static SqlConnection con = new SqlConnection("server=ADMIN; uid=sa; pwd=123123; database= QLSV");
+        public static SqlConnection con = new SqlConnection("server=ADMIN; uid=sa; pwd=123123; database= QLDienThoai");
 
     }
 }
